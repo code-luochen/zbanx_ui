@@ -5,7 +5,7 @@ import { Calendar as CalendarIcon } from "lucide-react";
 import * as React from "react";
 
 // 定义日期范围类型
-type DateRange = {
+export type DateRange = {
   start: {
     date?: Date;
     time: string;
@@ -17,7 +17,7 @@ type DateRange = {
 };
 
 // 定义日期时间范围类型
-type DateTimeRange = {
+export type DateTimeRange = {
   from?: Date;
   to?: Date;
 };
