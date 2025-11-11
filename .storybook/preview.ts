@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/nextjs-vite";
-import "tailwindcss";
+import "../src/styles/globals.css";
 
 const preview: Preview = {
   parameters: {

@@ -1,15 +1,8 @@
-const purgeEnabled = process.env.NODE_ENV === "production";
-
 export default {
   purge: {
-    enabled: purgeEnabled,
-    content: [
-      "./src/components/**/*.html",
-      "./src/components/**/*.tsx",
-      "./src/components/**/*.jsx",
-    ],
+    content: ["./src/**/*.html", "./src/**/*.tsx", "./src/**/*.jsx"],
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: ["class"],
   theme: {
     extend: {},
   },

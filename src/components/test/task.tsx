@@ -16,17 +16,14 @@ export default function Task({
   onPinTask,
 }: TaskProps) {
   return (
-    <div className="list-item">
-      <label htmlFor={`title-${id}`} aria-label={title}>
-        <input
-          type="text"
-          className="text-lg text-slate-900"
-          value={title}
-          readOnly={true}
-          name="title"
-          id={`title-${id}`}
-        />
-      </label>
-    </div>
+    <main
+      className="flex items-center justify-between p-2 border-b border-slate-200"
+      onClick={() => {
+        onArchiveTask(id);
+        onPinTask(id);
+      }}
+    >
+      heloo
+    </main>
   );
 }
