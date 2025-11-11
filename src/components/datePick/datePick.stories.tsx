@@ -18,11 +18,8 @@ export const ActionsData = {
 const meta = {
   component: DateTimeRangePicker,
   title: "日期时间范围选择器/DateTimeRangePicker",
-  tags: ["components/datePick"],
+  tags: ["autodocs"],
   excludeStories: /.*Data$/,
-  parameters: {
-    layout: "centered",
-  },
   args: {
     ...ActionsData,
     format: "yyyy-MM-dd HH:mm",
