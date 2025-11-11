@@ -11,7 +11,7 @@ export const ActionsData = {
 
 const meta = {
   component: Task,
-  title: "Task",
+  title: "Test",
   tags: ["autodocs"],
   //👇 Our exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,
