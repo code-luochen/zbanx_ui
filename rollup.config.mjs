@@ -8,12 +8,8 @@ import path from "path";
 import externals from "rollup-plugin-node-externals";
 import postcss from "rollup-plugin-postcss";
 
-// import pkg from "./package.json";
-
 const pkgPath = path.resolve(process.cwd(), "package.json");
 const pkg = JSON.parse(fs.readFileSync(pkgPath, "utf-8"));
-
-console.log(pkg.module);
 
 export default [
   {
