@@ -17,7 +17,7 @@ export const ActionsData = {
 
 const meta = {
   component: DateTimeRangePicker,
-  title: "日期时间范围选择器/DateTimeRangePicker",
+  title: "DateTimeRangePicker",
   tags: ["autodocs"],
   excludeStories: /.*Data$/,
   args: {

@@ -256,7 +256,7 @@ export function DateTimeRangePicker({
           <Button
             variant="outline"
             className={cn(
-              "w-full justify-start text-left font-normal transition-all hover:bg-muted/50",
+              "justify-start text-left font-normal transition-all hover:bg-muted/50 w-full truncate",
               !dateRange.start.date && "text-muted-foreground"
             )}
           >
@@ -264,9 +264,12 @@ export function DateTimeRangePicker({
             <span className="truncate">{displayText}</span>
           </Button>
         </PopoverTrigger>
+
         <PopoverContent
           className="w-auto p-0 shadow-lg rounded-lg border-0 overflow-hidden"
           align="start"
+          side="right"
+          alignOffset={-10}
         >
           <div className="p-4 bg-background border rounded-lg">
             {error && (
@@ -298,7 +301,7 @@ export function DateTimeRangePicker({
                         start: { ...prev.start, time: e.target.value },
                       }))
                     }
-                    className="w-full min-w-[120px] border-muted-foreground/20 focus:border-primary transition-all"
+                    className="w-full border-muted-foreground/20 focus:border-primary transition-all"
                   />
                 </div>
                 <div className="grid gap-2">
@@ -315,7 +318,7 @@ export function DateTimeRangePicker({
                         end: { ...prev.end, time: e.target.value },
                       }))
                     }
-                    className="w-full min-w-[120px] border-muted-foreground/20 focus:border-primary transition-all"
+                    className="w-full border-muted-foreground/20 focus:border-primary transition-all"
                   />
                 </div>
               </div>
@@ -342,7 +345,7 @@ export function DateTimeRangePicker({
                   setError(null);
                 }}
               >
-                此刻 (跳转到今天)
+                此刻
               </Button>
               <Button
                 variant="ghost"
